@@ -1,0 +1,39 @@
+
+ul li i{
+    font-size: 22px;
+    margin-right: 20px;
+}
+/* .icons .nav-item{
+    position: relative;
+} */
+.badge{
+    position: absolute;
+    top: -8px;
+    right: -30px;
+    font-size: 10px;
+}
+.search-box{
+    margin-right: 300px;
+}
+.buttom-bar{
+    border-bottom: 1px solid #333;
+    box-shadow: 1px 1px 10px #333;
+}
+
+
+
+
+@media (max-width:900px) {
+   .icons{
+    margin-top: 10px;
+   }
+   .badge{
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    font-size: 10px;
+}
+.search-box{
+    margin-right: 0;
+}
+}
