@@ -20,6 +20,17 @@ ul li i{
     box-shadow: 1px 1px 10px #333;
 }
 
+/* products 1 */
+.products-item-1{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.product-card:hover{
+    border: 1px solid rgb(116, 206, 116);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 
 
