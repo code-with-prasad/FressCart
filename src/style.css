@@ -27,13 +27,18 @@ ul li i{
     overflow-x: scroll;
 }
 
+.navbar li:hover{
+    cursor: pointer;
+}
+
 .product-card:hover{
     border: 1px solid rgb(116, 206, 116);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-
-
+footer{
+    background-color: #F0F3F2;
+    padding: 10px;
+}
 @media (max-width:900px) {
    .icons{
     margin-top: 10px;
@@ -46,5 +51,8 @@ ul li i{
 }
 .search-box{
     margin-right: 0;
+}
+.product-3{
+    overflow: scroll;
 }
 }
