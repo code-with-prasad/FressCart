@@ -4,30 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FressCart</title>
-
-    <!-- bootstrap links in web browser  -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
-    <!-- bootstrap link in fonts  -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> -->
-
-    <!-- bootstrap link in my computer folder -->
-    <link
-      rel="stylesheet"
-      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
-    />
     <link
       rel="stylesheet"
       href="/node_modules/bootstrap/dist/css/bootstrap.css"
     />
-
-    <!-- external style sheet link  -->
-    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div>
-      <!-- navbar  -->
-      <div class="container">
+  <body id="top">
+
+    <div class="container">
         <div class="navbar navbar-expand-lg">
           <div class="container">
             <!-- logo image  -->
@@ -280,436 +269,84 @@
           </div>
         </div>
       </div>
-      <!-- normal bar  -->
-      <div class="buttom-bar"></div>
-      <!-- carousel items  -->
-      <div class="container mt-3">
-        <div class="carousel slide" id="topBanner" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <!--xyz-->
-              <img
-                src="./public/img/main.jpg"
-                alt="baner"
-                class="w-100 d-block rounded"
-                height="500px"
-              />
+
+    <!-- carousel  -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-8 mt-2">
+          <div class="carousel slide" id="topBanner" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../public/img/product-single-img-1.jpg"
+                  alt="baner"
+                  class="w-100 d-block rounded"
+                  height="517px"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../public/img/main-2.jpg"
+                  alt="baner"
+                  class="w-100 d-block rounded"
+                  height="517px"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../public/img/banner-2.webp"
+                  alt="baner"
+                  class="w-100 d-block rounded"
+                  height="517px"
+                />
+              </div>
             </div>
-            <div class="carousel-item">
-              <img
-                src="./public/img/main-2.jpg"
-                alt="baner"
-                class="w-100 d-block rounded"
-                height="500px"
-              />
+            <div class="carousel-indicators">
+              <button
+                class="active bg-danger"
+                data-bs-slide-to="0"
+                data-bs-target="#topBanner"
+              ></button>
+              <button
+                class="active bg-danger"
+                data-bs-slide-to="1"
+                data-bs-target="#topBanner"
+              ></button>
+              <button
+                class="active bg-danger"
+                data-bs-slide-to="2"
+                data-bs-target="#topBanner"
+              ></button>
             </div>
-          </div>
-          <div class="carousel-indicators">
-            <button
-              class="active bg-danger"
-              data-bs-slide-to="0"
-              data-bs-target="#topBanner"
-            ></button>
-            <button
-              class="active bg-danger"
-              data-bs-slide-to="1"
-              data-bs-target="#topBanner"
-            ></button>
           </div>
         </div>
-      </div>
-
-      <!-- products 1 -->
-      <div class="container mt-4">
-        <h2>Featured Categories</h2>
-        <div class="products-item-1 d-flex mt-3">
-          <div
-            class="card product-card d-flex justify-content-center align-items-center"
-            style="height: 250px; width: 250px"
-          >
-            <div class="text-center">
-              <img
-                src="./public/img/category-atta-rice-dal.jpg"
-                alt=""
-                height="100%"
-                width="100%"
-              />
-              <p class="mt-2">Aytta, Rice & Dal</p>
-            </div>
-          </div>
-          <div
-            class="card product-card d-flex justify-content-center align-items-center"
-            style="height: 250px; width: 250px"
-          >
-            <div class="text-center">
-              <img
-                src="./public/img/category-baby-care.jpg"
-                alt=""
-                height="100%"
-                width="100%"
-              />
-              <p class="mt-2">Baby Care</p>
-            </div>
-          </div>
-          <div
-            class="card product-card product-card d-flex justify-content-center align-items-center"
-            style="height: 250px; width: 250px"
-          >
-            <div class="text-center">
-              <img
-                src="./public/img/category-bakery-biscuits.jpg"
-                alt=""
-                height="100%"
-                width="100%"
-              />
-              <p class="mt-2">Bakery Biscuits</p>
-            </div>
-          </div>
-          <div
-            class="card product-card d-flex justify-content-center align-items-center"
-            style="height: 250px; width: 250px"
-          >
-            <div class="text-center">
-              <img
-                src="./public/img/category-chicken-meat-fish.jpg"
-                alt=""
-                height="100%"
-                width="100%"
-              />
-              <p class="mt-2">Chicken, Meat, Fish</p>
-            </div>
-          </div>
-          <div
-            class="card product-card d-flex justify-content-center align-items-center"
-            style="height: 250px; width: 250px"
-          >
-            <div class="text-center">
-              <img
-                src="./public/img/category-cleaning-essentials.jpg"
-                alt=""
-                height="100%"
-                width="100%"
-              />
-              <p class="mt-2">Cleaning Essentials</p>
-            </div>
-          </div>
-          <div
-            class="card product-card d-flex justify-content-center align-items-center"
-            style="height: 250px; width: 250px"
-          >
-            <div class="text-center">
-              <img
-                src="./public/img/category-dairy-bread-eggs.jpg"
-                alt=""
-                height="100%"
-                width="100%"
-              />
-              <p class="mt-2">Dairy Bread Eggs</p>
-            </div>
-          </div>
-          <!-- <div class="card product-card  d-flex justify-content-center align-items-center" style="height: 250px; width: 250px;">
-            <div class="text-center">
-              <img src="./public/img/category-instant-food.jpg" alt="" height="100%" width="100%">
-              <p class="mt-2">Instant Food</p>
-            </div>
-          </div> -->
-          <!-- <div class="card product-card d-flex justify-content-center align-items-center" style="height: 250px; width: 250px;">
-            <div class="text-center">
-              <img src="./public/img/category-pet-care.jpg" alt="" height="100%" width="100%">
-              <p class="mt-2">Pet Care</p>
-            </div>
-          </div>
-          <div class="card product-card  d-flex justify-content-center align-items-center" style="height: 250px; width: 250px;">
-            <div class="text-center">
-              <img src="./public/img/category-snack-munchies.jpg" alt="" height="100%" width="100%">
-              <p class="mt-2">Snack & Munchies</p>
-            </div>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="container mt-5" id="other-cards">
-        <div class="row">
-          <div class="col-md-6 py-3 py-md-0">
-            <div class="card">
-              <img src="./public/img/banner-1.jpg" alt="" height="230" />
+        <div class="col-md-4">
+          <div>
+            <div class="card mt-2">
+              <img src="../public/img/menu-banner.jpg" alt="" height="250" />
               <div class="card-img-overlay">
                 <div class="mt-5 ms-3">
-                  <h3 class="fw-bolder">Fruits & Vegetables</h3>
-                  <p class="fw-bold">Get Upto 30% Off</p>
+                  <h3 class="fw-bolder">10% cashback onpersonal care</h3>
+                  <p class="fw-bold">Max cashback: $12</p>
+                  <span>Code: CARE12</span>
                   <button class="btn btn-dark">Shop Now</button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 py-3 py-md-0">
-            <div class="card">
-              <img src="./public/img/banner-2.webp" alt="" height="230" />
+            <div class="card mt-2">
+              <img src="../public/img/icecrime.jpg" alt="" height="250" />
               <div class="card-img-overlay">
                 <div class="mt-5 ms-3">
-                  <h3 class="fw-bolder">Fruits & Vegetables</h3>
-                  <p class="fw-bold">Get Upto 25% Off</p>
+                  <h3 class="fw-bolder">
+                    Say yes to <br />
+                    season’s fresh
+                  </h3>
+                  <p class="fw-bold">
+                    Refresh your day <br />
+                    the fruity way
+                  </p>
                   <button class="btn btn-dark">Shop Now</button>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- products 2  -->
-      <div class="container mt-4">
-        <h2 class="fw-bold">Popular Products</h2>
-        <div
-          class="mt-3 d-flex flex-wrap justify-content-center gap-2"
-        >
-          <div class="card product-card" style="width: 250px">
-            <img
-              src="./public/img/product-img-1.jpg"
-              class="card-img-top card-img-bottom"
-              alt=""
-              height="200"
-              width="200"
-            />
-            <div class="card-body">
-              <span style="font-size: 12px; color: #333">Snack & Munchies</span>
-              <h6>Haldiram's Sev Bhujia</h6>
-              <div class="d-flex ">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-half text-warning"></i>
-                <span>4.5(149)</span>
-              </div>
-              <div class="d-flex justify-content-between mt-3">
-                <span class="fw-bold">$18</span>
-                <button class="btn btn-success">+ Add</button>
-              </div>
-            </div>
-          </div>
-          <div class="card product-card" style="width: 250px">
-            <img
-              src="./public/img/product-img-2.jpg"
-              class="card-img-top card-img-bottom"
-              alt=""
-              height="200"
-              width="200"
-            />
-            <div class="card-body">
-              <span style="font-size: 12px; color: #333">Bakery & Biscuits</span>
-              <h6>NutriChoice Digestive</h6>
-              <div class="d-flex">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-half text-warning"></i>
-                <span>4.5 (25)</span>
-              </div>
-              <div class="d-flex justify-content-between mt-3">
-                <span class="fw-bold">$24</span>
-                <button class="btn btn-success">+ Add</button>
-              </div>
-            </div>
-          </div>
-          <div class="card product-card" style="width: 250px">
-            <img
-              src="./public/img/product-img-3.jpg"
-              class="card-img-top card-img-bottom"
-              alt=""
-              height="200"
-              width="200"
-            />
-            <div class="card-body">
-              <span style="font-size: 12px; color: #333">Bakery & Biscuits</span>
-              <h6>Cadbury 5 Star Chocolate</h6>
-              <div class="d-flex">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-half text-warning"></i>
-                <span>5 (469)</span>
-              </div>
-              <div class="d-flex justify-content-between mt-3">
-                <span class="fw-bold">$32</span>
-                <button class="btn btn-success">+ Add</button>
-              </div>
-            </div>
-          </div>
-          <div class="card product-card" style="width: 250px">
-            <img
-              src="./public/img/product-img-4.jpg"
-              class="card-img-top card-img-bottom"
-              alt=""
-              height="200"
-              width="200"
-            />
-            <div class="card-body">
-              <span style="font-size: 12px; color: #333">Snack & Munchies</span>
-              <h6>Onion Flavour Potato</h6>
-              <div class="d-flex">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-half text-warning"></i>
-                <span>3.5 (456)</span>
-              </div>
-              <div class="d-flex justify-content-between mt-3">
-                <span class="fw-bold">$3</span>
-                <button class="btn btn-success">+ Add</button>
-              </div>
-            </div>
-          </div>
-          <div class="card product-card" style="width: 250px">
-            <img
-              src="./public/img/product-img-5.jpg"
-              class="card-img-top card-img-bottom"
-              alt=""
-              height="200"
-              width="200"
-            />
-            <div class="card-body">
-              <span style="font-size: 12px; color: #333">Instant Food</span>
-              <h6>Salted Instant Popcorn</h6>
-              <div class="d-flex">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-half text-warning"></i>
-                <span>4.5 (39)</span>
-              </div>
-              <div class="d-flex justify-content-between mt-3">
-                <span class="fw-bold">$13</span>
-                <button class="btn btn-success">+ Add</button>
-              </div>
-            </div>
-          </div>
-          <div class="card product-card" style="width: 250px">
-            <img
-              src="./public/img/product-img-6.jpg"
-              class="card-img-top card-img-bottom"
-              alt=""
-              height="200"
-              width="200"
-            />
-            <div class="card-body">
-              <span style="font-size: 12px; color: #333">Dairy, Bread & Eggs</span>
-              <h6>Blueberry Greek Yogurt</h6>
-              <div class="d-flex">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-half text-warning"></i>
-                <span>4.5 (189)</span>
-              </div>
-              <div class="d-flex justify-content-between mt-3">
-                <span class="fw-bold">$18</span>
-                <button class="btn btn-success">+ Add</button>
-              </div>
-            </div>
-          </div>
-          <div class="card product-card" style="width: 250px">
-            <img
-              src="./public/img/product-img-7.jpg"
-              class="card-img-top card-img-bottom"
-              alt=""
-              height="200"
-              width="200"
-            />
-            <div class="card-body">
-              <span style="font-size: 12px; color: #333">Dairy, Bread & Eggs</span>
-              <h6>Britannia Cheese Slices</h6>
-              <div class="d-flex">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-half text-warning"></i>
-                <span>5 (345)</span>
-              </div>
-              <div class="d-flex justify-content-between mt-3">
-                <span class="fw-bold">$24</span>
-                <button class="btn btn-success">+ Add</button>
-              </div>
-            </div>
-          </div>
-          <div class="card product-card" style="width: 250px">
-            <img
-              src="./public/img/product-img-8.jpg"
-              class="card-img-top card-img-bottom"
-              alt=""
-              height="200"
-              width="200"
-            />
-            <div class="card-body">
-              <span style="font-size: 12px; color: #333">Instant Food</span>
-              <h6>Kellogg's Original Cereals</h6>
-              <div class="d-flex">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-half text-warning"></i>
-                <span>4 (90)</span>
-              </div>
-              <div class="d-flex justify-content-between mt-3">
-                <span class="fw-bold">$32</span>
-                <button class="btn btn-success">+ Add</button>
-              </div>
-            </div>
-          </div>
-          <div class="card product-card" style="width: 250px">
-            <img
-              src="./public/img/product-img-9.jpg"
-              class="card-img-top card-img-bottom"
-              alt=""
-              height="200"
-              width="200"
-            />
-            <div class="card-body">
-              <span style="font-size: 12px; color: #333">Snack & Munchies</span>
-              <h6>Slurrp Millet Chocolate</h6>
-              <div class="d-flex">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-half text-warning"></i>
-                <span>4.5 (67)</span>
-              </div>
-              <div class="d-flex justify-content-between mt-3">
-                <span class="fw-bold">$3</span>
-                <button class="btn btn-success">+ Add</button>
-              </div>
-            </div>
-          </div>
-          <div class="card product-card" style="width: 250px">
-            <img
-              src="./public/img/product-img-10.jpg"
-              class="card-img-top card-img-bottom"
-              alt=""
-              height="200"
-              width="200"
-            />
-            <div class="card-body">
-              <span style="font-size: 12px; color: #333">Dairy, Bread & Eggs</span>
-              <h6>Amul Butter - 500 g</h6>
-              <div class="d-flex">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-half text-warning"></i>
-                <span>3.5 (89)</span>
-              </div>
-              <div class="d-flex justify-content-between mt-3">
-                <span class="fw-bold">$13</span>
-                <button class="btn btn-success">+ Add</button>
               </div>
             </div>
           </div>
@@ -717,140 +354,646 @@
       </div>
     </div>
 
+    <!-- products 1  -->
+    <div class="container mt-5">
+      <h2>Shop Popular Categories</h2>
+      <div>
+        <div class="row mt-3">
+          <div class="col-md-2 col-sm-6 col-6">
+            <div
+              class="product-item rounded-circle p-4"
+              style="height: 130px; width: 130px"
+            >
+              <img
+                src="../public/img/category-dairy-bread-eggs.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <p>Dairy, Bread & Eggs</p>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6">
+            <div
+              class="product-item rounded-circle p-4"
+              style="height: 130px; width: 130px"
+            >
+              <img
+                src="../public/img/category-atta-rice-dal.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <p>Atta, Rice & Dal</p>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6">
+            <div
+              class="product-item rounded-circle p-4"
+              style="height: 130px; width: 130px"
+            >
+              <img
+                src="../public/img/category-snack-munchies.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <p>Snack & Munchies</p>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6">
+            <div
+              class="product-item rounded-circle p-4"
+              style="height: 130px; width: 130px"
+            >
+              <img
+                src="../public/img/category-bakery-biscuits.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <p>Bakery & Biscuits</p>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6">
+            <div
+              class="product-item rounded-circle p-4"
+              style="height: 130px; width: 130px"
+            >
+              <img
+                src="../public/img/category-instant-food.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <p>Instant Food</p>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6">
+            <div
+              class="product-item rounded-circle p-4"
+              style="height: 130px; width: 130px"
+            >
+              <img
+                src="../public/img/category-tea-coffee-drinks.jpg"
+                style="width: 100%"
+              />
+            </div>
+            <p>Tea, Coffee & Drinks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- products 1  -->
+    <div class="container mt-3">
+      <div class="row mt-3">
+        <div class="col-md-2 col-sm-6 col-6">
+          <div
+            class="product-item rounded-circle p-4"
+            style="height: 130px; width: 130px"
+          >
+            <img
+              src="../public/img/category-dairy-bread-eggs.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <p>Dairy, Bread & Eggs</p>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6">
+          <div
+            class="product-item rounded-circle p-4"
+            style="height: 130px; width: 130px"
+          >
+            <img
+              src="../public/img/category-atta-rice-dal.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <p>Atta, Rice & Dal</p>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6">
+          <div
+            class="product-item rounded-circle p-4"
+            style="height: 130px; width: 130px"
+          >
+            <img
+              src="../public/img/category-snack-munchies.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <p>Snack & Munchies</p>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6">
+          <div
+            class="product-item rounded-circle p-4"
+            style="height: 130px; width: 130px"
+          >
+            <img
+              src="../public/img/category-bakery-biscuits.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <p>Bakery & Biscuits</p>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6">
+          <div
+            class="product-item rounded-circle p-4"
+            style="height: 130px; width: 130px"
+          >
+            <img
+              src="../public/img/category-instant-food.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <p>Instant Food</p>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6">
+          <div
+            class="product-item rounded-circle p-4"
+            style="height: 130px; width: 130px"
+          >
+            <img
+              src="../public/img/category-tea-coffee-drinks.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <p>Tea, Coffee & Drinks</p>
+        </div>
+      </div>
+    </div>
+
     <!-- products 3  -->
-    <div class="container mt-4">
-      <h2 class="fw-bold mb-3">Daily Best Sells</h2>
-      <div class="row product-3" style="height: 500px;">
-        <div class="col-3 d-block">
-          <div class="card" style="height: 500px;">
-            <img src="./public/img/cofy.jfif" alt="" height="500px">
-            <div class="card-img-overlay">
-              <h2>100% Organic Coffee Beans.</h2>
-              <span>Get the best before colse</span><br>
-              <button class="btn btn-success mt-2">Shop Now <span></span></button>
+    <div>
+      <!-- product navbar  -->
+      <div class="container mt-5">
+        <div class="products-nav d-flex justify-content-between align-items-center">
+          <div>
+            <h3>New Products</h3>
+            <p>New products with updated stocks</p>
+          </div>
+          <div class="d-flex">
+            <div class="me-3">
+              <button class="btn btn-success">Fruits & Vegetables</button>
+            </div>
+            <div>
+              <ul class="d-flex justify-content-center list-unstyled" style="cursor: pointer;">
+                <li class="me-3">Snack & Munchies</li>
+                <li class="me-3">Bakery & Biscuits</li>
+                <li class="me-3">Tea, Coffee & Drinks</li>
+                <li class="me-3">Cold Drinks & Juices</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-3 d-block">
-          <div class="card">
-            <img src="./public/img/product-img-11.jpg" alt="" class="card-img-top card-img-bottom" height="260">
+      </div>
+      <!-- product-items  -->
+      <div class="container mt-3">
+        <div class="d-flex products-item-1 justify-content-center">
+          <div class="card" style="width: 250px;">
+            <img src="../public/img/product-img-1.jpg" alt="" class="card-img-bottom card-img-top">
             <div class="card-body">
-              <span style="font-size: 12px;">Tea, Coffee & Drinks </span>
-              <h6>Roast Ground Coffee</h6>
-              <div class="d-flex justify-content-between">
-                <span>$13</span>
-                <div>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-half text-warning"></span>
-                  <span >4.5</span>
-                </div>
+              <h6>Haldiram's Sev Bhujia</h6>
+              <div>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-half text-warning"></span>
+                <span>4.5(149)</span>
               </div>
-              <button class="btn btn-success w-100 mt-3">+ Add to cart</button>
-              <div class="mt-3 d-flex justify-content-center">
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">1787</span><br>
-                  <span style="font-size: 12px;">Days</span>
-                </div>
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">10</span><br>
-                  <span style="font-size: 12px;">Hours</span>
-                </div>
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">58</span><br>
-                  <span style="font-size: 12px;">Mins</span>
-                </div>
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">38</span><br>
-                  <span style="font-size: 12px;">Sec</span>
-                </div>
+              <div class="d-flex justify-content-between mt-2">
+                <span>$18</span>
+                <span>IN STOCK</span>
+              </div>
+              <div class="mt-2 d-none">
+                <button class="btn btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 250px;">
+            <img src="../public/img/product-img-2.jpg" alt="" class="card-img-bottom card-img-top">
+            <div class="card-body">
+              <h6>Britannia NutriChoice Digestive Biscuits</h6>
+              <div>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-half text-warning"></span>
+                <span>4.5(149)</span>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <span>$18</span>
+                <span>IN STOCK</span>
+              </div>
+              <div class="mt-2 d-none">
+                <button class="btn btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 250px;">
+            <img src="../public/img/product-img-3.jpg" alt="" class="card-img-bottom card-img-top">
+            <div class="card-body">
+              <h6>Cadbury 5 star chocolate</h6>
+              <div>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-half text-warning"></span>
+                <span>4.5(149)</span>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <span>$32</span>
+                <span>IN STOCK</span>
+              </div>
+              <div class="mt-2 d-none">
+                <button class="btn btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 250px;">
+            <img src="../public/img/product-img-4.jpg" alt="" class="card-img-bottom card-img-top">
+            <div class="card-body">
+              <h6>Onion Flavour Potato</h6>
+              <div>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-half text-warning"></span>
+                <span>4.5(149)</span>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <span>$18</span>
+                <span>IN STOCK</span>
+              </div>
+              <div class="mt-2 d-none">
+                <button class="btn btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 250px;">
+            <img src="../public/img/product-img-5.jpg" alt="" class="card-img-bottom card-img-top">
+            <div class="card-body">
+              <h6>Salted Instant Popcorn</h6>
+              <div>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-half text-warning"></span>
+                <span>4.5(149)</span>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <span>$18</span>
+                <span>IN STOCK</span>
+              </div>
+              <div class="mt-2 d-none">
+                <button class="btn btn-success w-100">Add to Cart</button>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-3 d-block">
-          <div class="card">
-            <img src="./public/img/product-img-12.jpg" alt="" class="card-img-top card-img-bottom" height="260">
+        <!-- product items  -->
+        <div class="d-flex products-item-1 justify-content-center mt-4">
+          <div class="card" style="width: 250px;">
+            <img src="../public/img/product-img-6.jpg" alt="" class="card-img-bottom card-img-top">
             <div class="card-body">
-              <span style="font-size: 12px;">Fruits & Vegetables</span>
-              <h6>Crushed Tomatoes</h6>
-              <div class="d-flex justify-content-between">
-                <span>$13</span>
-                <div>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-half text-warning"></span>
-                  <span >4.5</span>
-                </div>
+              <h6>Epigamia Blueberry Greek Yogurt, 90g</h6>
+              <div>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-half text-warning"></span>
+                <span>4.5(149)</span>
               </div>
-              <button class="btn btn-success w-100 mt-3">+ Add to cart</button>
-              <div class="mt-3 d-flex justify-content-center">
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">1787</span><br>
-                  <span style="font-size: 12px;">Days</span>
-                </div>
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">10</span><br>
-                  <span style="font-size: 12px;">Hours</span>
-                </div>
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">58</span><br>
-                  <span style="font-size: 12px;">Mins</span>
-                </div>
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">38</span><br>
-                  <span style="font-size: 12px;">Sec</span>
-                </div>
+              <div class="d-flex justify-content-between mt-2">
+                <span>$18</span>
+                <span>IN STOCK</span>
+              </div>
+              <div class="mt-2 d-none">
+                <button class="btn btn-success w-100">Add to Cart</button>
               </div>
             </div>
           </div>
-
+          <div class="card" style="width: 250px;">
+            <img src="../public/img/product-img-7.jpg" alt="" class="card-img-bottom card-img-top">
+            <div class="card-body">
+              <h6>Haldiram's Sev Bhujia</h6>
+              <div>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-half text-warning"></span>
+                <span>4.5(149)</span>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <span>$18</span>
+                <span>IN STOCK</span>
+              </div>
+              <div class="mt-2 d-none">
+                <button class="btn btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 250px;">
+            <img src="../public/img/product-img-8.jpg" alt="" class="card-img-bottom card-img-top">
+            <div class="card-body">
+              <h6>Kellogg's Special K Original Cereal</h6>
+              <div>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-half text-warning"></span>
+                <span>4.5(149)</span>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <span>$18</span>
+                <span>IN STOCK</span>
+              </div>
+              <div class="mt-2 d-none">
+                <button class="btn btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 250px;">
+            <img src="../public/img/product-img-9.jpg" alt="" class="card-img-bottom card-img-top">
+            <div class="card-body">
+              <h6>Slurrp Farm No Maida Millet Pancake Mix</h6>
+              <div>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-half text-warning"></span>
+                <span>4.5(149)</span>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <span>$18</span>
+                <span>IN STOCK</span>
+              </div>
+              <div class="mt-2 d-none">
+                <button class="btn btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 250px;">
+            <img src="../public/img/product-img-10.jpg" alt="" class="card-img-bottom card-img-top">
+            <div class="card-body">
+              <h6>Amul and Milk </h6>
+              <div>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-fill text-warning"></span>
+                <span class="bi bi-star-half text-warning"></span>
+                <span>4.5(149)</span>
+              </div>
+              <div class="d-flex justify-content-between mt-2">
+                <span>$18</span>
+                <span>IN STOCK</span>
+              </div>
+              <div class="mt-2 d-none">
+                <button class="btn btn-success w-100">Add to Cart</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="col-3 d-block">
-          <div class="card">
-            <img src="./public/img/product-img-13.jpg" alt="" class="card-img-top card-img-bottom" height="260">
-            <div class="card-body">
-              <span style="font-size: 12px;">Fruits & Vegetables </span>
-              <h6>Golden Pineapple</h6>
-              <div class="d-flex justify-content-between">
-                <span>$13</span>
-                <div>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-fill text-warning"></span>
-                  <span class="bi bi-star-half text-warning"></span>
-                  <span >4.5</span>
-                </div>
-              </div>
-              <button class="btn btn-success w-100 mt-3">+ Add to cart</button>
-              <div class="mt-3 d-flex justify-content-center">
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">1787</span><br>
-                  <span style="font-size: 12px;">Days</span>
-                </div>
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">10</span><br>
-                  <span style="font-size: 12px;">Hours</span>
-                </div>
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">58</span><br>
-                  <span style="font-size: 12px;">Mins</span>
-                </div>
-                <div class="border text-center rounded ps-3 pe-3 m-1">
-                  <span style="font-size: 12px;">38</span><br>
-                  <span style="font-size: 12px;">Sec</span>
-                </div>
-              </div>
+    <!-- alert box  -->
+    <div class="container mt-5">
+      <div class="alert alert-item d-flex justify-content-between align-item-center" style="background-color: #F0F3F2;">
+        <div>
+          <h2>One Stop Grocery Shop</h2>
+          <p>Shopping for your furry friend? Find food,</p>
+          <p>treats, and more in one easy spot.</p>
+          <button class="btn btn-dark mt-2">Get Discount on Share</button>
+        </div>
+        <div>
+          <svg class="mt-3 me-4" width="120" height="120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M90.655 20.149c-11.04-3.017-25.225 40.216-11.976 43.835 13.25 3.62 23.019-40.815 11.976-43.835z" fill="#EABC49"/><path d="M93.438 29.724a7.034 7.034 0 00-4.417-3.579 7.066 7.066 0 00-5.623.838l10.04 2.741z" fill="#DB3030"/><path d="M85.938 57.168a7.034 7.034 0 00-4.417-3.579 7.048 7.048 0 00-5.623.838l10.04 2.741z" fill="#EB8F48"/><path d="M92.476 36.82a8.322 8.322 0 00-5.218-4.233 8.33 8.33 0 00-6.645.991l11.863 3.241zm-3.871 14.158a8.336 8.336 0 00-11.863-3.241l11.863 3.241zm2.388-6.843a9.011 9.011 0 00-12.821-3.502l12.822 3.502z" fill="#DB3030"/><path d="M74.835 24.583h-9.08a2.042 2.042 0 01-2.044-2.044c0-1.13.914-2.044 2.044-2.044h9.08c1.13 0 2.044.914 2.044 2.044a2.045 2.045 0 01-2.044 2.044z" fill="#00684A"/><path d="M78.778 38.111a2.363 2.363 0 00-2.364-2.363h-.23c1.919 0 3.17-2.017 2.324-3.737l-3.674-7.433h-9.08l-3.674 7.433c-.85 1.72.4 3.737 2.323 3.737h-.23a2.363 2.363 0 100 4.727 2.363 2.363 0 100 4.727 2.363 2.363 0 100 4.727 2.363 2.363 0 100 4.727h12.241a2.363 2.363 0 100-4.727 2.363 2.363 0 100-4.727 2.363 2.363 0 100-4.727 2.363 2.363 0 002.364-2.364z" fill="#FAE7DB"/><path d="M78.778 38.111a2.363 2.363 0 00-2.364-2.363h-.23c1.919 0 3.17-2.017 2.324-3.737l-1.22-2.471a6.67 6.67 0 00-.675.148c-1.414.396-2.684 1.175-4.012 1.797-1.328.62-2.805 1.098-4.25.828-1.3-.243-2.408-1.058-3.628-1.576a5.02 5.02 0 00-1.815-.405l-.828 1.68c-.85 1.719.4 3.736 2.323 3.736h-.23a2.363 2.363 0 100 4.727 2.363 2.363 0 100 4.727 2.363 2.363 0 100 4.727 2.363 2.363 0 100 4.727h12.241a2.363 2.363 0 100-4.727 2.363 2.363 0 100-4.727 2.363 2.363 0 100-4.727 2.363 2.363 0 002.364-2.364z" fill="#016BF8"/><path d="M42.755 33.88H23.852v31.257h18.903V33.879zm4.469-7.267H28.32v-3.097a2.784 2.784 0 012.782-2.782h13.34a2.784 2.784 0 012.782 2.782v3.097z" fill="#2B5B4F"/><path d="M42.755 33.88H23.852l4.47-7.267h18.904l-4.47 7.267z" fill="#FAE7DB"/><path d="M51.695 33.88v31.257h-8.941V33.879l4.47-7.266 4.47 7.267z" fill="#EABC49"/><path d="M38.546 40.687H28.06a.694.694 0 010-1.387h10.485a.694.694 0 010 1.387zm0 4.961H28.06a.694.694 0 010-1.387h10.485a.694.694 0 010 1.387z" fill="#254C40"/><path d="M38.546 50.604H28.06a.694.694 0 010-1.386h10.485a.694.694 0 010 1.386z" fill="#EABC49"/><path d="M54.718 57.169l-1.499-1.45-2.03.464-1.5-1.45-2.03.464-1.5-1.45-2.034.469s3.327-6.416 4.903-12.061c1.575-5.646 2.048-12.858 2.048-12.858l1.5 1.45 2.034-.464 1.5 1.45 2.03-.464 1.499 1.45 2.03-.464 1.5 1.45 2.03-.464 1.499 1.45 2.03-.464 1.5 1.45 2.034-.464s-3.327 6.415-4.902 12.06c-1.576 5.646-2.049 12.858-2.049 12.858l-1.499-1.45-2.035.464-1.499-1.45-2.03.464-1.5-1.45-2.03.46z" fill="#FAE7DB"/><path d="M68.734 34.217l-2.03.464-1.5-1.45-2.03.464-1.499-1.45-2.03.464-1.5-1.45-2.03.464-1.499-1.45-2.035.464-1.499-1.45s-.077 1.149-.266 2.886l20.187 5.632c.739-1.584 1.265-2.606 1.265-2.606l-2.035.463-1.499-1.445zM47.659 55.2l2.03-.463 1.5 1.45 2.03-.464 1.5 1.45 2.03-.464 1.499 1.45 2.03-.464 1.5 1.45 2.034-.464 1.5 1.45s.076-1.148.265-2.886l-20.182-5.641a77.42 77.42 0 01-1.27 2.61l2.035-.463 1.499 1.45z" fill="#EABC49"/><path d="M62.562 45.927c-1.08 3.885-3.917 6.487-6.325 5.812-2.413-.671-3.49-4.367-2.404-8.252 1.085-3.886 3.916-6.488 6.325-5.812 2.413.675 3.49 4.367 2.404 8.252zm25.294 53.191H32.149a4.985 4.985 0 01-4.89-4.02L19.336 57.92h81.332L92.74 95.097a4.977 4.977 0 01-4.884 4.02z" fill="#00684A"/><path d="M101.335 57.92H18.67a3.615 3.615 0 01-3.615-3.615v-2.688a3.615 3.615 0 013.615-3.615h82.665a3.615 3.615 0 013.615 3.615v2.688a3.612 3.612 0 01-3.615 3.615zM60.001 91.162c-1 0-1.81-.81-1.81-1.81V67.68a1.81 1.81 0 013.62 0v21.673c0 1.004-.81 1.81-1.81 1.81zm10.129 0c-1 0-1.81-.81-1.81-1.81V67.68a1.81 1.81 0 013.62 0v21.673c0 1.004-.81 1.81-1.81 1.81zm10.137 0c-1 0-1.81-.81-1.81-1.81V67.68a1.81 1.81 0 013.62 0v21.673a1.813 1.813 0 01-1.81 1.81zm-30.395 0c1 0 1.81-.81 1.81-1.81V67.68a1.81 1.81 0 00-3.62 0v21.673c0 1.004.81 1.81 1.81 1.81zm-10.129 0c1 0 1.81-.81 1.81-1.81V67.68a1.81 1.81 0 00-3.62 0v21.673c0 1.004.81 1.81 1.81 1.81z" fill="#0AAD0A"/><path d="M103.615 74.667L81.587 55.08a2.636 2.636 0 113.507-3.939l22.028 19.588a2.635 2.635 0 01.216 3.723 2.636 2.636 0 01-3.723.216z" fill="#EABC49"/><path d="M84.382 53.085a1.076 1.076 0 11-2.152 0 1.076 1.076 0 012.152 0z" fill="#00684A"/><path d="M16.391 74.667L38.419 55.08a2.636 2.636 0 10-3.507-3.939L12.884 70.728a2.636 2.636 0 00-.216 3.723 2.636 2.636 0 003.723.216z" fill="#EABC49"/><path d="M35.617 53.085a1.076 1.076 0 102.152 0 1.076 1.076 0 00-2.152 0z" fill="#00684A"/></svg>          
+        </div>
+      </div>
+    </div>
+
+    <!-- products 4  -->
+    <div class="container">
+      <h2>Special Offers of the View All Week!</h2>
+      <div class="small d-flex justify-content-between">
+        <p>Get exclusive ongoing offers, deals, and discount codes of shopping</p>
+        <a href="#top" class="text-decoration-none text-success">View All</a>
+      </div>
+    </div>
+    <div class="container">
+      <div style="border: 2px solid red;" class="page-3-product rounded d-flex justify-content-center">
+        <div class="card" style="width: 255px;">
+          <img src="../public/img/product-img-2.jpg" alt="" class="card-img-top card-img-bottom">
+          <div class="card-body text-center">
+            <span>$15</span>
+            <p>Britannia NutriChoice Digestive Biscuits</p>
+            <div>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-half text-warning"></span>
+              <span>4.4(3,149)</span>
+              <span class="text-success">IN STOCK</span>
+              <span class="progress mt-2" style="height: 10px;">
+                <span class="progress-bar" style="width: 80%; background-color: #a9a9a9;"></span>
+              </span>
+              <span class="mt-2" style="font-size: 12px;">the available products : 8</span>
             </div>
           </div>
+        </div>
+        <div class="card" style="width: 255px;">
+          <img src="../public/img/product-img-3.jpg" alt="" class="card-img-top card-img-bottom">
+          <div class="card-body text-center">
+            <span>$32</span>
+            <p>Cadbury 5 star chocolate</p>
+            <div>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-half text-warning"></span>
+              <span>4.7(1,130)</span>
+              <span class="text-success">IN STOCK</span>
+              <span class="progress mt-2" style="height: 10px;">
+                <span class="progress-bar" style="width: 50%; background-color: #a9a9a9;"></span>
+              </span>
+              <span class="mt-2" style="font-size: 12px;">the available products : 34</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 255px;">
+          <img src="../public/img/product-img-8.jpg" alt="" class="card-img-top card-img-bottom">
+          <div class="card-body text-center">
+            <span>$25</span>
+            <p>Kellogg's Special K Original Cereal</p>
+            <div>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-half text-warning"></span>
+              <span>4.7(1,130)</span>
+              <span class="text-success">IN STOCK</span>
+              <span class="progress mt-2" style="height: 10px;">
+                <span class="progress-bar" style="width: 30%; background-color: #a9a9a9;"></span>
+              </span>
+              <span class="mt-2" style="font-size: 12px;">the available products : 8</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 255px;">
+          <img src="../public/img/product-img-9.jpg" alt="" class="card-img-top card-img-bottom">
+          <div class="card-body text-center">
+            <span>$34</span>
+            <p>Slurrp Farm No Maida Millet Pancake Mix</p>
+            <div>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-half text-warning"></span>
+              <span>4.5(3,149)</span>
+              <span class="text-success">IN STOCK</span>
+              <span class="progress mt-2" style="height: 10px;">
+                <span class="progress-bar" style="width: 80%; background-color: #a9a9a9;"></span>
+              </span>
+              <span class="mt-2" style="font-size: 12px;">the available products : 67</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 255px;">
+          <img src="../public/img/product-img-10.jpg" alt="" class="card-img-top card-img-bottom">
+          <div class="card-body text-center">
+            <span>$15</span>
+            <p>Amul Butter - 500g</p>
+            <div>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-half text-warning"></span>
+              <span>4.4(3,149)</span>
+              <span class="text-success">IN STOCK</span>
+              <span class="progress mt-2" style="height: 10px;">
+                <span class="progress-bar" style="width: 90%; background-color: #a9a9a9;"></span>
+              </span>
+              <span class="mt-2" style="font-size: 12px;">the available products : 44</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- products 4  -->
+    <div class="container mt-5">
+      <h2>Bestsellers In Your Area</h2>
+      <p>Find the bestseller products in your area with discount.</p>
+      <div class="d-flex products-item-1 justify-content-center mt-4">
+        <div class="card" style="width: 250px;">
+          <img src="../public/img/product-img-8.jpg" alt="" class="card-img-bottom card-img-top">
+          <div class="card-body">
+            <h6>Kellogg's Special K Original Cereal</h6>
+            <div>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-half text-warning"></span>
+              <span>4.5(149)</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <span>$18</span>
+              <span>IN STOCK</span>
+            </div>
+            <div class="mt-2">
+              <button class="btn btn-success w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 250px;">
+          <img src="../public/img/product-img-9.jpg" alt="" class="card-img-bottom card-img-top">
+          <div class="card-body">
+            <h6>Slurrp Farm No Maida Millet Pancake Mix</h6>
+            <div>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-half text-warning"></span>
+              <span>4.5(149)</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <span>$18</span>
+              <span>IN STOCK</span>
+            </div>
+            <div class="mt-2">
+              <button class="btn btn-success w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 250px;">
+          <img src="../public/img/product-img-6.jpg" alt="" class="card-img-bottom card-img-top">
+          <div class="card-body">
+            <h6>Epigamia Blueberry Greek Yogurt, 90g</h6>
+            <div>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-half text-warning"></span>
+              <span>4.5(149)</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <span>$18</span>
+              <span>IN STOCK</span>
+            </div>
+            <div class="mt-2">
+              <button class="btn btn-success w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 250px;">
+          <img src="../public/img/product-img-10.jpg" alt="" class="card-img-bottom card-img-top">
+          <div class="card-body">
+            <h6>Amul and Milk </h6>
+            <div>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-half text-warning"></span>
+              <span>4.5(149)</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <span>$18</span>
+              <span>IN STOCK</span>
+            </div>
+            <div class="mt-4">
+              <button class="btn btn-success w-100">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 250px;">
+          <img src="../public/img/product-img-7.jpg" alt="" class="card-img-bottom card-img-top">
+          <div class="card-body">
+            <h6>Haldiram's Sev Bhujia</h6>
+            <div>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-fill text-warning"></span>
+              <span class="bi bi-star-half text-warning"></span>
+              <span>4.5(149)</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+              <span>$18</span>
+              <span>IN STOCK</span>
+            </div>
+            <div class="mt-4">
+              <button class="btn btn-success w-100">Add to Cart</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -859,43 +1002,35 @@
     <div class="container d-flex justify-content-center mt-5">
       <nav aria-label="...">
         <ul class="pagination pagination-lg">
-          <li class="page-item active" aria-current="page">
-            <span class="page-link">1</span>
+          <li class="page-item" aria-current="page">
+            <a class="page-link" href="../index.html">1</a>
           </li>
-          <li class="page-item"><a class="page-link" href="./src/page2.html">2</a></li>
-          <li class="page-item"><a class="page-link" href="./src/page3.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="./page2.html">2</a></li>
+          <li class="page-item active"><span class="page-link">3</span></li>
         </ul>
       </nav>
     </div>
 
-    <!-- fetures  -->
-    <div class="container mt-5">
-      <div class="row p-2 m-1">
-        <div class=" col-sm-12 col-md-3 text-start mt-3">
-          <svg width="40" height="40" fill="none" xmlssns="http://www.w3.org/2000/svg"><path d="M20 36.667c9.205 0 16.667-7.462 16.667-16.667 0-9.205-7.462-16.666-16.667-16.666-9.205 0-16.666 7.461-16.666 16.666S10.795 36.667 20 36.667z" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 10v10l6.667 3.333" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h3>10 minute grocery now</h3>
-          <p>Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.</p>
+    <!-- banner  -->
+    <div class="container-fluid mt-4" style="background-color: #001E2B;">
+      <div class="container contact d-flex justify-content-between align-items-center">
+        <div class="mt-4">
+          <span class="text-light">$30 discount for your first order</span>
+          <h3 class="text-light mt-3">Get top deals, latest trends, and more.</h3>
+          <span class="text-light mt-3">Join our email subscription now to get updates on promotions and coupons.</span>
+          <div class="d-flex mt-4">
+            <input type="text" placeholder="Enter Email Address" class="form-control w-50">
+            <button class="btn btn-success ms-3" style="width: 100px;">Sign Up</button>
+          </div>
         </div>
-        <div class=" col-sm-12 col-md-3 text-start mt-3">
-          <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.333 20v16.667H6.667V20m30-8.334H3.333V20h33.334v-8.334zM20 36.666v-25" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 11.667h-7.5a4.167 4.167 0 010-8.334c5.834 0 7.5 8.334 7.5 8.334zm0 0h7.5a4.167 4.167 0 100-8.334c-5.833 0-7.5 8.334-7.5 8.334z" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h3>Best Prices & Offers</h3>
-          <p>Cheaper prices than your local supermarket, great cashback offers to top it off. Get best pricess & offers.</p>
-        </div>
-        <div class=" col-sm-12 col-md-3 text-start mt-3">
-          <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27.5 15.667l-15-8.65M35 26.667V13.333a3.333 3.333 0 00-1.667-2.883L21.667 3.784a3.334 3.334 0 00-3.334 0L6.667 10.45A3.333 3.333 0 005 13.334v13.333a3.333 3.333 0 001.667 2.883l11.666 6.667a3.333 3.333 0 003.334 0l11.666-6.667A3.334 3.334 0 0035 26.667z" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.45 11.6L20 20.017 34.55 11.6M20 36.8V20" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h3>Wide Assortment</h3>
-          <p>Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other categories.</p>
-        </div>
-        <div class=" col-sm-12 col-md-3 text-start mt-3">
-          <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M38.334 6.667v10h-10M1.667 33.334v-10h10" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.85 15A15 15 0 0130.6 9.4l7.733 7.267M1.667 23.333L9.4 30.6A15 15 0 0034.15 25" stroke="#0AAD0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <h3>Easy Returns</h3>
-          <p>Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions asked policy .</p>
+        <div>
+          <img src="../public/img/girl-email.png" alt="">
         </div>
       </div>
     </div>
 
-    <!-- footer  -->
-    <footer class="mt-5">
+    <!-- navigation  -->
+    <footer class="mt-0">
       <div class="container mt-5 mb-5">
         <div class="row">
           <div class="col-12 col-md-12 col-lg-4">

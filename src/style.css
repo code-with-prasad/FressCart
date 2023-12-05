@@ -1,58 +1,88 @@
-
-ul li i{
-    font-size: 22px;
-    margin-right: 20px;
+ul li i {
+  font-size: 22px;
+  margin-right: 20px;
 }
 /* .icons .nav-item{
     position: relative;
 } */
-.badge{
-    position: absolute;
-    top: -8px;
-    right: -30px;
-    font-size: 10px;
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -30px;
+  font-size: 10px;
 }
-.search-box{
-    margin-right: 300px;
+.search-box {
+  margin-right: 300px;
 }
-.buttom-bar{
-    border-bottom: 1px solid #333;
-    box-shadow: 1px 1px 10px #333;
+.buttom-bar {
+  border-bottom: 1px solid #333;
+  box-shadow: 1px 1px 10px #333;
 }
 
 /* products 1 */
-.products-item-1{
-    display: flex;
-    gap: 20px;
-    overflow-x: scroll;
+.products-item-1 {
+  display: flex;
+  gap: 20px;
+  /* overflow-x: scroll; */
+  justify-content: center;
 }
 
-.navbar li:hover{
-    cursor: pointer;
+.navbar li:hover {
+  cursor: pointer;
 }
 
-.product-card:hover{
-    border: 1px solid rgb(116, 206, 116);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.product-card:hover {
+  border: 1px solid rgb(116, 206, 116);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-footer{
-    background-color: #F0F3F2;
-    padding: 10px;
+footer {
+  background-color: #f0f3f2;
+  padding: 10px;
 }
-@media (max-width:900px) {
-   .icons{
+
+/* page 3  */
+.product-item {
+  background-color: white;
+  border: 1px solid #333;
+}
+@media (max-width: 900px) {
+  .icons {
     margin-top: 10px;
-   }
-   .badge{
+  }
+  .badge {
     position: absolute;
     top: -8px;
     right: -10px;
     font-size: 10px;
-}
-.search-box{
+  }
+  .search-box {
     margin-right: 0;
-}
-.product-3{
+  }
+  .product-3 {
     overflow: scroll;
-}
+  }
+  .products-item-1 {
+    flex-wrap: wrap;
+  }
+  /* second page */
+  .alert-item {
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact {
+    flex-wrap: wrap;
+  }
+
+  /* page 3  */
+  .products-nav {
+    flex-wrap: wrap;
+  }
+  .small{
+    flex-wrap: wrap;
+  }
+  .page-3-product{
+    flex-wrap: wrap;
+  }
 }
